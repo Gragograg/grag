@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grag's Corner</title> 
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <main class="container">
+
+
+        <!--header or smth like that idk-->>
+   <header>
+       <div class="path">/usr/grag/index</div>
+       <nav>
+        <a href="#" class="active">index</a> 
+        <a herf="projects.html">projects</a>
+        <a herf="#">my blog</a>
+        <a herf="#">contact</a>
+       </nav>
+    </header>
+        <!--intruduction stuff and all of that i guess why am i even writhing this no one is gonna read it hopefuly idk maybe but just in case-->
+        <section class="intro"
+
+
+     <div class="hero">
+       <img src="/images/image.jpg" class="img" alt="Profile picture" width="24%">
+        <div>
+
+      <div class="content">
+        <h1>Hi, I am Grag</h1>
+
+        <p> I am an internet rando and i make stuff, I like to mess around with random tech wether that be software or hardware.</p>
+
+        <p class="time">
+            Right now it's <strong id="current-time">--:--</strong> where I am
+        <span>(GMT +2)</span>.
+        </p>
+      </div>
+
+      <section>
+        <!--YAY OTHER TRASH FOR THE SITE YAYYYYYY-->
+        <p class="notice">
+        All of my source code (including the site) is available on my github also the website is still WIP.
+        </p>
+
+        <hr>
+
+        <h2>Interests
+            <ul class="plain">
+                <li>I like messing around with random things just cuz</li>
+                <li>Playing Deltarune or Undertale or any just other game</li>
+                <li>Playing instruments</li>
+                <li>And Making stupid stuff and decisions</li>
+            </ul>
+        </h2>
+
+
+        <script>
+       function updateTime() {
+        const timeElement = document.getElementById("current-time");
+
+        const now = new Date();
+
+        const time = new Intl.DateTimeFormat("en-US", {
+            timeZone: "Europe/Ljubljana",
+            hour: "2-digit",
+            minute: "2-digit",
+            hour12: false
+        }).format(now);
+
+        timeElement.textContent = time;
+    }
+
+    // Update immediately
+    updateTime();
+
+    // Update every second
+    setInterval(updateTime, 1000);
+  </script>
+
+        </main>
+</body>
+</html>

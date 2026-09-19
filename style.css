@@ -1,0 +1,194 @@
+/* -------------- OLD ASS CODE RIGHT THERE */
+/*body {
+  background-color:#141414;
+}
+p {
+    color: white
+}
+
+/* --------------- RESET -----------------*/
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    background: #111;
+    color: #c8c6c2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/* --------------- LAYOUT -----------------*/
+
+.container {
+    width: calc(100% - 40px);
+    max-width: 800px;
+    margin: 25px auto 0;
+}
+
+
+/* -------------- HEADER ------------------*/
+.path {
+    text-align: center;
+    font-size: 30px;
+    color: #aaa6a3;
+    margin-bottom: 32px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 40px;
+
+}
+
+.path a {
+    color: #aaa6a3;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+nav a:hover {
+    color: #eee
+
+}
+
+nav active {
+    color: #eee;
+    font-weight: bold;
+
+}
+
+/* -------------------- INTRO --------------*/
+.intro {
+    display: flex;
+    align-items: flex-start;
+    gap: 27px;
+}
+
+.profile {
+    width: 130px;
+    height: 130px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.content {
+    padding-top: 0;
+}
+
+h1 {
+    margin: 0 0 16px;
+
+    font-size: 32px;
+    font-weight: normal;
+    color: #ddd9d5;
+}
+
+.content p {
+    margin: 0 0 22px;
+
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* ---------- Time ---------- */
+
+.time {
+    color: #77736f;
+    font-style: italic;
+}
+
+.time strong {
+    color: #aaa6a3;
+    font-weight: normal;
+}
+
+.time span {
+    color: #686461;
+}
+
+/* ---------- Notice ---------- */
+
+.notice {
+    margin-top: 20px;
+
+    font-size: 16px;
+    color: #85817d;
+}
+
+.notice a {
+    color: #aaa6a3;
+    text-decoration: underline;
+}
+
+.notice a:hover {
+    color: white;
+}
+
+/* ---------- Divider ---------- */
+
+hr {
+    border: 0;
+    border-top: 1px solid #363432;
+    margin-top: 22px;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 650px) {
+
+    .container {
+        width: calc(100% - 30px);
+        margin-top: 20px;
+    }
+
+    .path {
+        font-size: 24px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 12px 20px;
+        margin-bottom: 30px;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .profile {
+        width: 280px;
+        height: 280px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+}
+/* ---------- bull crap for fonts n stuff*/
+h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.plain {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
